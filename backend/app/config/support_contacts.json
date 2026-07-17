@@ -1,0 +1,127 @@
+{
+  "resources": {
+    "counselling_cell": {
+      "id": "counselling_cell",
+      "name": "Counselling Cell",
+      "office": "Student Services Building, Room B-12",
+      "email": "counselling@college.edu",
+      "phone": "+91-XXXX-XXXXXX",
+      "office_hours": "Mon–Fri, 10:00 AM – 4:00 PM (walk-in); appointments via portal",
+      "emergency_notice": "If you are in immediate danger or thinking of harming yourself, contact campus security or local emergency services right away."
+    },
+    "student_affairs": {
+      "id": "student_affairs",
+      "name": "Student Affairs Office",
+      "office": "Administration Block, Ground Floor",
+      "email": "student.affairs@college.edu",
+      "phone": "+91-XXXX-XXXXXX",
+      "office_hours": "Mon–Fri, 9:00 AM – 5:00 PM",
+      "emergency_notice": null
+    },
+    "hostel_warden": {
+      "id": "hostel_warden",
+      "name": "Hostel Warden",
+      "office": "Hostel Office (respective block)",
+      "email": "hostel@college.edu",
+      "phone": "+91-XXXX-XXXXXX",
+      "office_hours": "Mon–Sat, 9:00 AM – 8:00 PM; on-call after hours via security",
+      "emergency_notice": null
+    },
+    "emergency_security": {
+      "id": "emergency_security",
+      "name": "Emergency Security",
+      "office": "Main Gate Security / Campus Control Room",
+      "email": "security@college.edu",
+      "phone": "100 (internal) / +91-XXXX-XXXXXX",
+      "office_hours": "24×7",
+      "emergency_notice": "For immediate threats to safety, call campus security now and move to a safe location if possible."
+    },
+    "medical_centre": {
+      "id": "medical_centre",
+      "name": "Medical Centre",
+      "office": "Campus Medical Centre, Room G-01",
+      "email": "medical@college.edu",
+      "phone": "+91-XXXX-XXXXXX",
+      "office_hours": "24×7 emergency desk; outpatient hours Mon–Fri 9:00 AM – 5:00 PM",
+      "emergency_notice": "For life-threatening medical emergencies, call campus security / medical centre immediately or dial local emergency services."
+    },
+    "womens_cell": {
+      "id": "womens_cell",
+      "name": "Women's Cell",
+      "office": "Student Services Building, Room C-04",
+      "email": "womens.cell@college.edu",
+      "phone": "+91-XXXX-XXXXXX",
+      "office_hours": "Mon–Fri, 10:00 AM – 5:00 PM",
+      "emergency_notice": "If you feel unsafe right now, contact campus security immediately. You may also reach the Women's Cell for confidential support."
+    },
+    "anti_ragging": {
+      "id": "anti_ragging",
+      "name": "Anti-Ragging Committee",
+      "office": "Dean of Student Affairs Office",
+      "email": "antiragging@college.edu",
+      "phone": "+91-XXXX-XXXXXX",
+      "office_hours": "Mon–Fri, 9:00 AM – 5:00 PM; helpline 24×7 via security",
+      "emergency_notice": "Ragging is prohibited. Report incidents immediately to the Anti-Ragging Committee or campus security."
+    },
+    "it_helpdesk": {
+      "id": "it_helpdesk",
+      "name": "IT Helpdesk",
+      "office": "Library Building, IT Support Desk",
+      "email": "ithelp@college.edu",
+      "phone": "+91-XXXX-XXXXXX",
+      "office_hours": "Mon–Fri, 9:00 AM – 6:00 PM",
+      "emergency_notice": null
+    },
+    "finance_office": {
+      "id": "finance_office",
+      "name": "Finance Office",
+      "office": "Accounts Section, Administration Block",
+      "email": "accounts@college.edu",
+      "phone": "+91-XXXX-XXXXXX",
+      "office_hours": "Mon–Fri, 10:00 AM – 4:00 PM",
+      "emergency_notice": null
+    },
+    "examination_cell": {
+      "id": "examination_cell",
+      "name": "Examination Cell",
+      "office": "Controller of Examinations Office",
+      "email": "exams@college.edu",
+      "phone": "+91-XXXX-XXXXXX",
+      "office_hours": "Mon–Fri, 9:30 AM – 4:30 PM",
+      "emergency_notice": null
+    },
+    "admissions_office": {
+      "id": "admissions_office",
+      "name": "Admissions Office",
+      "office": "Admissions Counter, Administration Block",
+      "email": "admissions@college.edu",
+      "phone": "+91-XXXX-XXXXXX",
+      "office_hours": "Mon–Fri, 9:00 AM – 5:00 PM",
+      "emergency_notice": null
+    },
+    "grievance_cell": {
+      "id": "grievance_cell",
+      "name": "Grievance Redressal Cell",
+      "office": "Student Services Building",
+      "email": "grievance@college.edu",
+      "phone": "+91-XXXX-XXXXXX",
+      "office_hours": "Mon–Fri, 10:00 AM – 5:00 PM",
+      "emergency_notice": null
+    }
+  },
+  "category_defaults": {
+    "mental_health_crisis": "counselling_cell",
+    "self_harm_suicide": "counselling_cell",
+    "harassment": "student_affairs",
+    "bullying": "student_affairs",
+    "sexual_harassment": "womens_cell",
+    "discrimination": "grievance_cell",
+    "medical_emergency": "medical_centre",
+    "campus_safety": "emergency_security",
+    "legal_issues": "student_affairs",
+    "violence_threats": "emergency_security",
+    "academic_misconduct": "examination_cell",
+    "unknown_sensitive": "student_affairs",
+    "general_complaint": "grievance_cell"
+  }
+}

@@ -1,0 +1,48 @@
+Lecture Notes: Supervised Learning and Model Generalization
+============================================================
+
+1. Introduction
+---------------
+Supervised learning trains a model on labeled examples so it can predict
+labels for unseen inputs. The central goal is generalization: performing
+well on data that was not part of the training set.
+
+2. Overfitting
+--------------
+Overfitting happens when a model learns the training data too closely,
+including noise and spurious patterns. An overfitted model shows low
+training error but high test error. Typical causes include a model that
+is too complex for the amount of data, training for too many epochs, or
+insufficient regularization.
+
+Signs of overfitting:
+- Training accuracy keeps improving while validation accuracy stalls or drops
+- Very large weights in linear models
+- Decision trees that grow extremely deep
+
+3. Underfitting
+---------------
+Underfitting occurs when a model is too simple to capture the underlying
+structure of the data. Both training and test error remain high.
+Increasing model capacity or improving features can help.
+
+4. Bias-Variance Tradeoff
+-------------------------
+Bias is error from overly simplistic assumptions. Variance is error from
+sensitivity to small fluctuations in the training set. Overfitting is
+associated with high variance; underfitting with high bias. Regularization,
+cross-validation, and more training data help manage this tradeoff.
+
+5. Techniques to Reduce Overfitting
+-----------------------------------
+- Cross-validation to select hyperparameters
+- Early stopping during neural network training
+- Dropout, weight decay (L2), and data augmentation
+- Pruning decision trees and limiting tree depth
+- Collecting more representative training examples
+
+6. Evaluation Metrics
+---------------------
+Always evaluate on a held-out test set. For classification, accuracy,
+precision, recall, and F1-score are common. For regression, RMSE and MAE
+are widely used. Never tune hyperparameters on the final test set.

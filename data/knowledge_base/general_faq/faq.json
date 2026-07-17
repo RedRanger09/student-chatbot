@@ -1,0 +1,1451 @@
+{
+  "faqs": [
+    {
+      "id": 1,
+      "category": "Admissions",
+      "intent": "admission_process",
+      "question": "How do I apply for admission?",
+      "alternate_questions": [
+        "How can I apply?",
+        "What is the admission process?",
+        "How do I enroll?",
+        "Where do I submit my application?"
+      ],
+      "keywords": ["admission", "apply", "enrollment", "application process"],
+      "answer": "Sample Data: Students should complete the online application form on the university admissions portal, upload the required documents (mark sheets, ID proof, category certificate if applicable), participate in counselling if applicable for their program, and pay the admission fee after seat allotment is confirmed. Applicants should keep their application reference number for future correspondence.",
+      "department": "Admissions Office",
+      "related_topics": ["Eligibility", "Documents Required", "Fee Payment"],
+      "priority": 1,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 2,
+      "category": "Admissions",
+      "intent": "eligibility_criteria",
+      "question": "What is the eligibility criteria for admission?",
+      "alternate_questions": [
+        "Am I eligible to apply?",
+        "What marks do I need for admission?",
+        "What are the minimum qualifications required?"
+      ],
+      "keywords": ["eligibility", "criteria", "minimum marks", "qualification"],
+      "answer": "Sample Data: Eligibility varies by program. For undergraduate engineering programs, candidates typically need a minimum of 45% aggregate marks in the qualifying examination (10+2) with Physics, Chemistry, and Mathematics as core subjects, along with a valid entrance exam score. Postgraduate programs require a relevant bachelor's degree with minimum aggregate marks as specified by the department. Students should check the specific program page for exact requirements.",
+      "department": "Admissions Office",
+      "related_topics": ["Admission Process", "Entrance Exam", "Documents Required"],
+      "priority": 1,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 3,
+      "category": "Admissions",
+      "intent": "documents_required",
+      "question": "What documents are required for admission?",
+      "alternate_questions": [
+        "Which documents should I upload?",
+        "What paperwork do I need for enrollment?",
+        "List of documents needed for admission"
+      ],
+      "keywords": ["documents", "certificates", "admission paperwork", "upload"],
+      "answer": "Sample Data: Required documents typically include 10th and 12th mark sheets, transfer certificate, migration certificate, category certificate (if applicable), income certificate (for scholarship consideration), Aadhaar card or valid government ID, passport-size photographs, and entrance exam scorecard. All documents should be scanned in PDF format and uploaded during the online application process.",
+      "department": "Admissions Office",
+      "related_topics": ["Admission Process", "Eligibility", "Scholarships"],
+      "priority": 2,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 4,
+      "category": "Admissions",
+      "intent": "counselling_process",
+      "question": "How does the counselling process work?",
+      "alternate_questions": [
+        "What happens during counselling?",
+        "How is seat allotment done?",
+        "How do I attend counselling for seat selection?"
+      ],
+      "keywords": ["counselling", "seat allotment", "choice filling"],
+      "answer": "Sample Data: Counselling is conducted in multiple rounds based on entrance exam rank. Candidates must register on the counselling portal, fill their college and branch preferences (choice filling), and wait for seat allotment. Once a seat is allotted, students must confirm acceptance and pay the seat confirmation fee within the specified deadline, or the seat may be released to the next candidate.",
+      "department": "Admissions Office",
+      "related_topics": ["Admission Process", "Fee Payment", "Document Verification"],
+      "priority": 2,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 5,
+      "category": "Admissions",
+      "intent": "application_deadline",
+      "question": "What is the last date to apply for admission?",
+      "alternate_questions": [
+        "When does the application close?",
+        "What is the admission deadline?",
+        "Is there still time to apply?"
+      ],
+      "keywords": ["deadline", "last date", "application closing date"],
+      "answer": "Sample Data: Admission application deadlines vary by program and academic session. Typically, undergraduate applications close by the end of June, while postgraduate applications may extend into July. Students should always refer to the official academic calendar for exact dates, as late applications are generally not accepted except in special circumstances approved by the Admissions Committee.",
+      "department": "Admissions Office",
+      "related_topics": ["Academic Calendar", "Admission Process"],
+      "priority": 2,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 6,
+      "category": "Admissions",
+      "intent": "lateral_entry",
+      "question": "Is lateral entry admission available?",
+      "alternate_questions": [
+        "Can diploma holders get direct second year admission?",
+        "What is lateral entry?",
+        "How do I apply for lateral entry into engineering?"
+      ],
+      "keywords": ["lateral entry", "diploma", "direct second year"],
+      "answer": "Sample Data: Lateral entry admission allows diploma holders or B.Sc. graduates to directly join the second year of a relevant engineering program, subject to seat availability and qualifying lateral entry exam scores. Applicants must apply through the lateral entry admission portal and submit diploma mark sheets along with other standard documents.",
+      "department": "Admissions Office",
+      "related_topics": ["Eligibility", "Documents Required"],
+      "priority": 3,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 7,
+      "category": "Admissions",
+      "intent": "transfer_admission",
+      "question": "Can I transfer from another college?",
+      "alternate_questions": [
+        "How do I apply for a college transfer?",
+        "Is inter-college transfer allowed?",
+        "What is the process for migrating to this university?"
+      ],
+      "keywords": ["transfer", "migration", "inter-college"],
+      "answer": "Sample Data: Inter-college transfers are permitted only under specific conditions, such as parental transfer or medical grounds, and are subject to seat availability in the desired branch. Students must submit a transfer request along with supporting documents to the Registrar's office, and approval is granted at the discretion of the university administration.",
+      "department": "Registrar Office",
+      "related_topics": ["Admission Process", "Documents Required"],
+      "priority": 3,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 8,
+      "category": "Fees",
+      "intent": "fee_payment_methods",
+      "question": "How can I pay my semester fees?",
+      "alternate_questions": [
+        "Can I pay fees online?",
+        "What payment methods are accepted?",
+        "Is UPI payment available?",
+        "Can parents pay fees on my behalf?"
+      ],
+      "keywords": ["fee payment", "online payment", "UPI", "semester fees"],
+      "answer": "Sample Data: Semester fees can be paid online through the student portal using net banking, debit/credit card, or UPI. Parents or guardians may also make the payment on behalf of the student as long as the correct student enrollment number is entered during checkout. A payment receipt is generated instantly and should be downloaded for personal records.",
+      "department": "Accounts Office",
+      "related_topics": ["Fee Structure", "Fee Deadline", "Scholarships"],
+      "priority": 1,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 9,
+      "category": "Fees",
+      "intent": "fee_deadline_miss",
+      "question": "What happens if I miss the fee payment deadline?",
+      "alternate_questions": [
+        "What if I pay fees late?",
+        "Is there a fine for late fee payment?",
+        "Can I still pay fees after the due date?"
+      ],
+      "keywords": ["late fee", "fee deadline", "penalty"],
+      "answer": "Sample Data: If a student misses the fee payment deadline, a late fee penalty is applied, typically calculated per day of delay, up to a maximum grace period defined by the university. Beyond the grace period, the student's semester registration may be put on hold, restricting access to exams and academic services until the outstanding fee is cleared.",
+      "department": "Accounts Office",
+      "related_topics": ["Fee Payment", "Fee Structure", "Examination Eligibility"],
+      "priority": 2,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 10,
+      "category": "Fees",
+      "intent": "fee_structure",
+      "question": "What is the fee structure for my program?",
+      "alternate_questions": [
+        "How much does tuition cost?",
+        "What are the semester fee details?",
+        "How much do I need to pay per year?"
+      ],
+      "keywords": ["fee structure", "tuition fee", "cost of program"],
+      "answer": "Sample Data: Fee structure varies by program and category (General, OBC, SC/ST, EWS). It typically includes tuition fee, examination fee, development fee, and miscellaneous charges. A detailed, program-wise fee breakdown is published annually on the Fee Structure page of the university website and may be revised each academic year.",
+      "department": "Accounts Office",
+      "related_topics": ["Fee Payment", "Scholarships", "Refund Policy"],
+      "priority": 1,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 11,
+      "category": "Fees",
+      "intent": "fee_refund",
+      "question": "How do I request a fee refund?",
+      "alternate_questions": [
+        "Can I get my admission fee refunded?",
+        "What is the refund policy?",
+        "I withdrew from the course, will I get my money back?"
+      ],
+      "keywords": ["refund", "withdrawal", "fee return"],
+      "answer": "Sample Data: Fee refunds are processed according to the university's refund policy, which is generally aligned with regulatory guidelines. Refund percentage depends on the date of withdrawal relative to the admission date and the last date of counselling. Students must submit a written refund request through the student portal along with proof of withdrawal.",
+      "department": "Accounts Office",
+      "related_topics": ["Fee Structure", "Admission Process"],
+      "priority": 2,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 12,
+      "category": "Fees",
+      "intent": "installment_facility",
+      "question": "Can I pay my fees in installments?",
+      "alternate_questions": [
+        "Is there an installment option for fee payment?",
+        "Can I split my semester fee into parts?",
+        "Does the university allow partial fee payment?"
+      ],
+      "keywords": ["installment", "partial payment", "fee split"],
+      "answer": "Sample Data: Some programs offer an installment facility for fee payment, allowing students to split the semester fee into two or three parts. This facility must be requested in advance through the Accounts Office and is subject to approval based on the student's financial circumstances and prior payment history.",
+      "department": "Accounts Office",
+      "related_topics": ["Fee Payment", "Fee Structure"],
+      "priority": 3,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 13,
+      "category": "Scholarships",
+      "intent": "scholarship_eligibility",
+      "question": "Am I eligible for a scholarship?",
+      "alternate_questions": [
+        "Who can apply for scholarships?",
+        "What are the scholarship eligibility criteria?",
+        "Do I qualify for financial aid?"
+      ],
+      "keywords": ["scholarship", "eligibility", "financial aid"],
+      "answer": "Sample Data: Scholarship eligibility depends on the type of scholarship. Merit-based scholarships require a minimum academic performance threshold (e.g., 75% aggregate or top rank in class), while need-based scholarships require family income below a specified limit along with supporting income certificates. Category-based scholarships (SC/ST/OBC/EWS) require valid category certificates issued by a competent authority.",
+      "department": "Scholarship Cell",
+      "related_topics": ["Fee Structure", "Documents Required"],
+      "priority": 1,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 14,
+      "category": "Scholarships",
+      "intent": "scholarship_application",
+      "question": "How do I apply for a scholarship?",
+      "alternate_questions": [
+        "Where do I submit my scholarship application?",
+        "What is the process to apply for financial aid?",
+        "How can I register on the scholarship portal?"
+      ],
+      "keywords": ["scholarship application", "financial aid process", "scholarship portal"],
+      "answer": "Sample Data: Students must register on the state or national scholarship portal (as applicable), fill in personal and academic details, upload required documents such as income and category certificates, and submit the application before the deadline. The university's Scholarship Cell verifies and forwards eligible applications for further processing.",
+      "department": "Scholarship Cell",
+      "related_topics": ["Scholarship Eligibility", "Documents Required"],
+      "priority": 1,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 15,
+      "category": "Scholarships",
+      "intent": "scholarship_disbursement",
+      "question": "When will I receive my scholarship amount?",
+      "alternate_questions": [
+        "How long does scholarship disbursement take?",
+        "When does scholarship money get credited?",
+        "Why is my scholarship delayed?"
+      ],
+      "keywords": ["scholarship disbursement", "scholarship payment", "delay"],
+      "answer": "Sample Data: Scholarship disbursement timelines depend on the granting authority (state government, central government, or university-funded schemes) and can range from a few weeks to a few months after verification. Delays are commonly caused by incomplete documentation, bank account mismatches, or pending institutional verification, so students should ensure their bank details are updated and accurate.",
+      "department": "Scholarship Cell",
+      "related_topics": ["Scholarship Application", "Fee Payment"],
+      "priority": 2,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 16,
+      "category": "Scholarships",
+      "intent": "scholarship_renewal",
+      "question": "Do I need to reapply for my scholarship every year?",
+      "alternate_questions": [
+        "Is scholarship renewal automatic?",
+        "How do I renew my scholarship for the next semester?",
+        "What is required to continue receiving a scholarship?"
+      ],
+      "keywords": ["scholarship renewal", "continuation", "reapplication"],
+      "answer": "Sample Data: Most scholarships require annual renewal. Students must maintain the minimum required academic performance (typically no backlog subjects and minimum attendance) and submit a renewal application with updated income and academic documents each year to continue receiving the benefit.",
+      "department": "Scholarship Cell",
+      "related_topics": ["Scholarship Eligibility", "Academic Performance"],
+      "priority": 2,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 17,
+      "category": "Academics",
+      "intent": "course_registration",
+      "question": "How do I register for courses each semester?",
+      "alternate_questions": [
+        "How can I enroll in subjects for the new semester?",
+        "What is the course registration process?",
+        "Where do I select my electives?"
+      ],
+      "keywords": ["course registration", "subject enrollment", "elective selection"],
+      "answer": "Sample Data: Course registration is done through the academic portal at the start of each semester. Students select core and elective subjects based on their curriculum, subject to seat availability for electives. Registration must be completed before the deadline; late registration may require departmental approval and could involve a late registration fee.",
+      "department": "Academic Office",
+      "related_topics": ["Academic Calendar", "Curriculum", "Elective Subjects"],
+      "priority": 1,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 18,
+      "category": "Academics",
+      "intent": "attendance_requirement",
+      "question": "What is the minimum attendance required?",
+      "alternate_questions": [
+        "How much attendance do I need to sit for exams?",
+        "What happens if my attendance is low?",
+        "Is there a condonation for shortage of attendance?"
+      ],
+      "keywords": ["attendance", "minimum attendance", "condonation"],
+      "answer": "Sample Data: Students are generally required to maintain a minimum of 75% attendance in each subject to be eligible to appear for end-semester examinations. In genuine cases such as medical emergencies, students may apply for attendance condonation with supporting documents, subject to approval by the Dean of Academics, though attendance may not be condoned below 65%.",
+      "department": "Academic Office",
+      "related_topics": ["Examination Eligibility", "Course Registration"],
+      "priority": 1,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 19,
+      "category": "Academics",
+      "intent": "grading_system",
+      "question": "How does the grading system work?",
+      "alternate_questions": [
+        "What is the CGPA calculation method?",
+        "How are grades assigned in each subject?",
+        "What is the difference between SGPA and CGPA?"
+      ],
+      "keywords": ["grading system", "CGPA", "SGPA", "grade points"],
+      "answer": "Sample Data: The university follows a 10-point relative or absolute grading system depending on the program. Each subject is awarded a letter grade based on internal assessment and end-semester examination performance, converted to grade points. SGPA (Semester Grade Point Average) reflects performance in a single semester, while CGPA (Cumulative Grade Point Average) reflects overall performance across all completed semesters.",
+      "department": "Academic Office",
+      "related_topics": ["Examination Results", "Backlog Subjects"],
+      "priority": 1,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 20,
+      "category": "Academics",
+      "intent": "backlog_subjects",
+      "question": "How do I clear a backlog subject?",
+      "alternate_questions": [
+        "What if I fail a subject?",
+        "How can I reappear for a failed paper?",
+        "What is the process for backlog exams?"
+      ],
+      "keywords": ["backlog", "failed subject", "reappear exam"],
+      "answer": "Sample Data: Students who fail a subject (commonly called a backlog) can reappear in the subsequent back-paper or improvement examination, typically conducted at the end of the next semester or during a dedicated back-exam window. Students must register for the backlog exam through the academic portal and pay the applicable examination fee.",
+      "department": "Academic Office",
+      "related_topics": ["Grading System", "Examination Eligibility"],
+      "priority": 1,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 21,
+      "category": "Academics",
+      "intent": "branch_change",
+      "question": "Can I change my branch after first year?",
+      "alternate_questions": [
+        "How do I request a branch change?",
+        "Is inter-branch transfer allowed?",
+        "What is the process to switch my engineering branch?"
+      ],
+      "keywords": ["branch change", "stream change", "transfer branch"],
+      "answer": "Sample Data: Branch change requests are generally considered at the end of the first year, based on the student's academic performance (CGPA) and seat availability in the desired branch. Students must submit a formal application to the Academic Office within the specified window, and final approval is at the discretion of the university's Academic Committee.",
+      "department": "Academic Office",
+      "related_topics": ["Grading System", "Curriculum"],
+      "priority": 3,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 22,
+      "category": "Academics",
+      "intent": "curriculum_syllabus",
+      "question": "Where can I find my course syllabus?",
+      "alternate_questions": [
+        "How do I access the curriculum for my branch?",
+        "Where is the subject syllabus published?",
+        "Can I download the semester-wise syllabus?"
+      ],
+      "keywords": ["syllabus", "curriculum", "course outline"],
+      "answer": "Sample Data: The complete semester-wise syllabus and curriculum for each branch is published on the university's academic resources page and can be downloaded as a PDF. Students should refer to the syllabus version corresponding to their admission year, as curriculum revisions may apply to newer batches.",
+      "department": "Academic Office",
+      "related_topics": ["Course Registration", "Academic Calendar"],
+      "priority": 2,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 23,
+      "category": "Exams",
+      "intent": "exam_schedule",
+      "question": "When will the end-semester exams be held?",
+      "alternate_questions": [
+        "What is the exam timetable?",
+        "When does the exam schedule get released?",
+        "How do I check my exam dates?"
+      ],
+      "keywords": ["exam schedule", "timetable", "exam dates"],
+      "answer": "Sample Data: The end-semester examination schedule is published on the university's examination portal typically two to three weeks before exams commence. Students should regularly check the portal or notice board for updates, as exam dates and seating arrangements may be revised due to unforeseen circumstances.",
+      "department": "Examination Cell",
+      "related_topics": ["Academic Calendar", "Exam Eligibility"],
+      "priority": 1,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 24,
+      "category": "Exams",
+      "intent": "admit_card",
+      "question": "How do I download my admit card?",
+      "alternate_questions": [
+        "Where can I get my exam hall ticket?",
+        "How to print exam admit card?",
+        "My admit card is not generating, what should I do?"
+      ],
+      "keywords": ["admit card", "hall ticket", "exam permission"],
+      "answer": "Sample Data: Admit cards are generated on the examination portal once fee payment and attendance requirements are verified as complete. Students can log in with their enrollment number to download and print the admit card. If the admit card does not generate, it usually indicates a pending fee dues or attendance shortfall, and students should contact the Examination Cell immediately.",
+      "department": "Examination Cell",
+      "related_topics": ["Fee Payment", "Attendance Requirement"],
+      "priority": 1,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 25,
+      "category": "Exams",
+      "intent": "result_declaration",
+      "question": "When will my exam results be declared?",
+      "alternate_questions": [
+        "How do I check my semester result?",
+        "Where can I view my marksheet?",
+        "Why is my result not showing on the portal?"
+      ],
+      "keywords": ["result", "marksheet", "result declaration"],
+      "answer": "Sample Data: Semester results are typically declared within four to six weeks after the completion of end-semester examinations and are published on the results portal. If a result is withheld, it is usually due to pending dues, unresolved malpractice cases, or incomplete internal assessment submissions, and students should reach out to the Examination Cell for clarification.",
+      "department": "Examination Cell",
+      "related_topics": ["Grading System", "Revaluation"],
+      "priority": 1,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 26,
+      "category": "Exams",
+      "intent": "revaluation_process",
+      "question": "How do I apply for revaluation of my answer sheet?",
+      "alternate_questions": [
+        "Can I request rechecking of my exam paper?",
+        "What is the process for grade improvement?",
+        "How much does revaluation cost?"
+      ],
+      "keywords": ["revaluation", "rechecking", "grade improvement"],
+      "answer": "Sample Data: Students who wish to have their answer sheet re-evaluated must submit a revaluation request through the examination portal within the specified window after result declaration, along with the applicable revaluation fee per subject. Revaluation typically involves rechecking of totals and verification that all answers were graded, and results are usually announced within two to three weeks.",
+      "department": "Examination Cell",
+      "related_topics": ["Result Declaration", "Grading System"],
+      "priority": 2,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 27,
+      "category": "Exams",
+      "intent": "unfair_means",
+      "question": "What happens if I am caught using unfair means in an exam?",
+      "alternate_questions": [
+        "What is the penalty for cheating during exams?",
+        "What counts as malpractice in exams?",
+        "Can I appeal an unfair means case?"
+      ],
+      "keywords": ["unfair means", "cheating", "malpractice", "exam penalty"],
+      "answer": "Sample Data: Use of unfair means during an examination, including possession of unauthorized material or impersonation, is treated seriously. Depending on the severity, penalties range from cancellation of the specific paper to debarment from examinations for one or more semesters. Students found guilty may appeal to the Unfair Means Committee within the specified timeframe.",
+      "department": "Examination Cell",
+      "related_topics": ["Exam Eligibility", "Student Conduct Policy"],
+      "priority": 2,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 28,
+      "category": "Calendar",
+      "intent": "semester_start_end",
+      "question": "When does the new semester start?",
+      "alternate_questions": [
+        "What is the semester start date?",
+        "When do classes begin?",
+        "When does this semester end?"
+      ],
+      "keywords": ["semester start", "semester end", "academic session"],
+      "answer": "Sample Data: The odd semester typically begins in July/August and ends in December, while the even semester begins in January and ends in May/June. Exact dates are published in the official Academic Calendar at the start of each academic year and may be adjusted for holidays or special events.",
+      "department": "Academic Office",
+      "related_topics": ["Academic Calendar", "Course Registration"],
+      "priority": 1,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 29,
+      "category": "Calendar",
+      "intent": "holiday_list",
+      "question": "What are the university holidays this year?",
+      "alternate_questions": [
+        "Is there a holiday list available?",
+        "When is the winter break?",
+        "How many holidays do we get in a semester?"
+      ],
+      "keywords": ["holidays", "vacation", "break schedule"],
+      "answer": "Sample Data: The university publishes an annual holiday list covering national holidays, festival breaks, winter break, and summer break. This list is available on the Academic Calendar page and may be updated periodically to reflect regional or state-specific holidays.",
+      "department": "Academic Office",
+      "related_topics": ["Academic Calendar", "Semester Start/End"],
+      "priority": 3,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 30,
+      "category": "Calendar",
+      "intent": "convocation_date",
+      "question": "When is the convocation ceremony?",
+      "alternate_questions": [
+        "When will I receive my degree?",
+        "How do I register for convocation?",
+        "What is the process to attend graduation ceremony?"
+      ],
+      "keywords": ["convocation", "graduation ceremony", "degree distribution"],
+      "answer": "Sample Data: Convocation ceremonies are usually held once a year, typically towards the end of the calendar year, for students who have successfully completed all degree requirements. Eligible students must register for convocation through the university portal and pay the convocation fee to receive their degree certificate on the ceremony day.",
+      "department": "Registrar Office",
+      "related_topics": ["Academic Calendar", "Degree Certificate"],
+      "priority": 3,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 31,
+      "category": "Hostel",
+      "intent": "hostel_application",
+      "question": "How do I apply for hostel accommodation?",
+      "alternate_questions": [
+        "How can I get a hostel room?",
+        "What is the process for hostel allotment?",
+        "Where do I submit my hostel application?"
+      ],
+      "keywords": ["hostel application", "accommodation", "room allotment"],
+      "answer": "Sample Data: Students seeking hostel accommodation must apply through the hostel portal after admission confirmation, indicating room type preference (single/double/triple sharing). Allotment is based on availability, distance from home, and in some cases merit or first-come-first-served basis. Students must pay the hostel fee within the deadline to confirm their allotment.",
+      "department": "Hostel Office",
+      "related_topics": ["Hostel Fees", "Hostel Rules"],
+      "priority": 1,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 32,
+      "category": "Hostel",
+      "intent": "hostel_fees",
+      "question": "What are the hostel fees?",
+      "alternate_questions": [
+        "How much does hostel accommodation cost?",
+        "Is mess fee included in hostel fee?",
+        "What is the annual hostel charge?"
+      ],
+      "keywords": ["hostel fees", "mess fee", "accommodation cost"],
+      "answer": "Sample Data: Hostel fees typically include room rent, mess charges, electricity/water charges, and a refundable security deposit. Fees vary based on room type (single, double, or triple occupancy) and are payable annually or semester-wise as specified by the Hostel Office.",
+      "department": "Hostel Office",
+      "related_topics": ["Hostel Application", "Fee Payment"],
+      "priority": 2,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 33,
+      "category": "Hostel",
+      "intent": "hostel_rules",
+      "question": "What are the hostel rules and curfew timings?",
+      "alternate_questions": [
+        "What time is hostel curfew?",
+        "Are outside guests allowed in the hostel?",
+        "What is the hostel code of conduct?"
+      ],
+      "keywords": ["hostel rules", "curfew", "hostel discipline"],
+      "answer": "Sample Data: Hostel residents are expected to follow the code of conduct, including a curfew time (commonly 9:30 PM to 10:00 PM on weekdays), restrictions on outside guests, and prohibition of items like electric heaters or unauthorized appliances. Repeated violations may lead to disciplinary action, including possible expulsion from the hostel.",
+      "department": "Hostel Office",
+      "related_topics": ["Hostel Application", "Student Conduct Policy"],
+      "priority": 2,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 34,
+      "category": "Hostel",
+      "intent": "hostel_leave",
+      "question": "How do I apply for hostel leave?",
+      "alternate_questions": [
+        "How do I request an outpass?",
+        "Can I stay out overnight from the hostel?",
+        "What is the process to leave hostel for the weekend?"
+      ],
+      "keywords": ["hostel leave", "outpass", "overnight stay"],
+      "answer": "Sample Data: Students must apply for an outpass through the hostel warden's office or online portal, specifying the reason and duration of leave. Overnight or outstation leave typically requires parental consent, especially for first-year students, and must be approved before departure from the hostel premises.",
+      "department": "Hostel Office",
+      "related_topics": ["Hostel Rules", "Student Conduct Policy"],
+      "priority": 3,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 35,
+      "category": "Library",
+      "intent": "library_membership",
+      "question": "How do I get a library membership?",
+      "alternate_questions": [
+        "How can I get a library card?",
+        "Is library access automatic for students?",
+        "How do I register for library services?"
+      ],
+      "keywords": ["library membership", "library card", "library registration"],
+      "answer": "Sample Data: All enrolled students are automatically granted library membership upon admission, linked to their student ID card. Students can use their ID card to borrow books, access digital resources, and use reading rooms. Lost ID cards should be reported immediately to avoid misuse.",
+      "department": "Library",
+      "related_topics": ["Book Borrowing", "Digital Resources"],
+      "priority": 2,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 36,
+      "category": "Library",
+      "intent": "book_borrowing_limit",
+      "question": "How many books can I borrow at a time?",
+      "alternate_questions": [
+        "What is the book issue limit?",
+        "How long can I keep a borrowed book?",
+        "Can postgraduate students borrow more books than undergraduates?"
+      ],
+      "keywords": ["book borrowing", "issue limit", "loan period"],
+      "answer": "Sample Data: Undergraduate students can typically borrow up to 3 books at a time for a loan period of 14 days, while postgraduate and research students may be allowed up to 5 books for a 21-day period. Loan periods may be extended through renewal if the book is not on hold by another student.",
+      "department": "Library",
+      "related_topics": ["Library Membership", "Library Fine"],
+      "priority": 3,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 37,
+      "category": "Library",
+      "intent": "library_fine",
+      "question": "What is the fine for late return of library books?",
+      "alternate_questions": [
+        "How much do I pay if I return a book late?",
+        "Is there a penalty for overdue books?",
+        "How can I clear my library dues?"
+      ],
+      "keywords": ["library fine", "overdue books", "late return penalty"],
+      "answer": "Sample Data: A late return fine is charged per day per book beyond the due date, as specified in the library policy. Students with unpaid library fines may face restrictions on borrowing further books, and pending fines must be cleared before receiving semester results or the No Dues Certificate.",
+      "department": "Library",
+      "related_topics": ["Book Borrowing", "No Dues Certificate"],
+      "priority": 3,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 38,
+      "category": "Library",
+      "intent": "digital_resources",
+      "question": "Does the library provide access to e-books and journals?",
+      "alternate_questions": [
+        "How do I access online journals?",
+        "Is there a digital library?",
+        "Can I read e-books from home?"
+      ],
+      "keywords": ["e-books", "digital library", "online journals"],
+      "answer": "Sample Data: The library provides access to a digital repository of e-books, research journals, and academic databases, accessible both on-campus and remotely through the university's VPN or digital library portal using student credentials. Students should contact the library helpdesk for login issues.",
+      "department": "Library",
+      "related_topics": ["Library Membership", "Research Resources"],
+      "priority": 3,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 39,
+      "category": "Contacts",
+      "intent": "admissions_office_contact",
+      "question": "How do I contact the Admissions Office?",
+      "alternate_questions": [
+        "What is the phone number for admissions?",
+        "How do I email the admissions team?",
+        "Where is the admissions office located?"
+      ],
+      "keywords": ["admissions contact", "phone number", "email"],
+      "answer": "Sample Data: The Admissions Office can be reached at admissions@sampleuniversity.edu (Sample Data) or via phone at +91-XXXXXXXXXX during working hours (Monday to Saturday, 9:00 AM to 5:00 PM). The office is located in the Administrative Block, Room 101, on the main campus.",
+      "department": "Admissions Office",
+      "related_topics": ["Admission Process", "Office Directory"],
+      "priority": 2,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 40,
+      "category": "Contacts",
+      "intent": "exam_cell_contact",
+      "question": "How do I contact the Examination Cell?",
+      "alternate_questions": [
+        "What is the examination department's helpline?",
+        "Where can I raise an exam-related query?",
+        "How do I email the exam controller?"
+      ],
+      "keywords": ["examination contact", "exam cell helpline", "exam query"],
+      "answer": "Sample Data: The Examination Cell can be contacted at examcell@sampleuniversity.edu (Sample Data) or via the helpline number displayed on the examination portal. The office is located in the Administrative Block, Room 205, and is open on working days from 10:00 AM to 4:00 PM.",
+      "department": "Examination Cell",
+      "related_topics": ["Exam Schedule", "Office Directory"],
+      "priority": 2,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 41,
+      "category": "Contacts",
+      "intent": "hostel_office_contact",
+      "question": "How do I contact the Hostel Office?",
+      "alternate_questions": [
+        "What is the hostel warden's contact number?",
+        "How do I reach the hostel administration?",
+        "Where is the hostel office located?"
+      ],
+      "keywords": ["hostel contact", "warden contact", "hostel administration"],
+      "answer": "Sample Data: The Hostel Office can be contacted at hostel@sampleuniversity.edu (Sample Data) or through the respective hostel warden, whose contact details are displayed on the hostel notice board. The central hostel administration office is located near Hostel Block A.",
+      "department": "Hostel Office",
+      "related_topics": ["Hostel Application", "Office Directory"],
+      "priority": 3,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 42,
+      "category": "Contacts",
+      "intent": "it_helpdesk_contact",
+      "question": "Who do I contact for IT or portal issues?",
+      "alternate_questions": [
+        "My student portal login isn't working, who can help?",
+        "How do I reach IT support?",
+        "Is there a helpdesk for technical issues?"
+      ],
+      "keywords": ["IT helpdesk", "portal issue", "technical support"],
+      "answer": "Sample Data: For technical issues related to the student portal, email login, or Wi-Fi access, students can contact the IT Helpdesk at ithelpdesk@sampleuniversity.edu (Sample Data) or visit the IT Services counter in the Computer Center building during working hours.",
+      "department": "IT Services",
+      "related_topics": ["Student Portal", "Office Directory"],
+      "priority": 3,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 43,
+      "category": "Policies",
+      "intent": "code_of_conduct",
+      "question": "What is the student code of conduct?",
+      "alternate_questions": [
+        "What behavior is expected from students?",
+        "What are the disciplinary policies?",
+        "What actions can lead to disciplinary action?"
+      ],
+      "keywords": ["code of conduct", "discipline", "student behavior"],
+      "answer": "Sample Data: Students are expected to maintain discipline, respect fellow students and staff, and refrain from activities such as ragging, harassment, or damage to university property. Violations are addressed through the university's Disciplinary Committee, and penalties range from warnings to suspension or expulsion, depending on severity.",
+      "department": "Student Affairs Office",
+      "related_topics": ["Anti-Ragging Policy", "Grievance Redressal"],
+      "priority": 1,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 44,
+      "category": "Policies",
+      "intent": "anti_ragging",
+      "question": "What is the anti-ragging policy?",
+      "alternate_questions": [
+        "How do I report ragging?",
+        "Is ragging punishable?",
+        "What should I do if I witness ragging?"
+      ],
+      "keywords": ["anti-ragging", "ragging complaint", "student safety"],
+      "answer": "Sample Data: The university maintains a strict zero-tolerance anti-ragging policy in compliance with regulatory guidelines. Any incident of ragging can be reported anonymously through the anti-ragging helpline or committee, and confirmed cases result in severe disciplinary action, including potential expulsion and reporting to law enforcement authorities.",
+      "department": "Student Affairs Office",
+      "related_topics": ["Code of Conduct", "Grievance Redressal"],
+      "priority": 1,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 45,
+      "category": "Policies",
+      "intent": "grievance_redressal",
+      "question": "How do I file a grievance or complaint?",
+      "alternate_questions": [
+        "Where can I submit a student complaint?",
+        "Is there a grievance redressal committee?",
+        "How do I escalate an unresolved issue?"
+      ],
+      "keywords": ["grievance", "complaint", "redressal committee"],
+      "answer": "Sample Data: Students can file grievances related to academics, administration, or personal issues through the Grievance Redressal Portal or by submitting a written complaint to the Grievance Redressal Committee. Complaints are typically reviewed and responded to within 15 working days, with escalation paths available for unresolved matters.",
+      "department": "Student Affairs Office",
+      "related_topics": ["Code of Conduct", "Anti-Ragging Policy"],
+      "priority": 1,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 46,
+      "category": "Policies",
+      "intent": "leave_of_absence",
+      "question": "How do I apply for a leave of absence from the university?",
+      "alternate_questions": [
+        "Can I take a semester break?",
+        "What is the process for academic leave?",
+        "How do I apply for a gap year?"
+      ],
+      "keywords": ["leave of absence", "semester break", "academic gap"],
+      "answer": "Sample Data: Students seeking a leave of absence for medical, personal, or other valid reasons must submit a formal application to the Dean of Academics along with supporting documents. Approved leave allows students to rejoin in a subsequent academic session without losing their seat, subject to university policy on maximum permissible duration of absence.",
+      "department": "Academic Office",
+      "related_topics": ["Academic Calendar", "Re-admission Policy"],
+      "priority": 3,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 47,
+      "category": "Policies",
+      "intent": "id_card_replacement",
+      "question": "How do I get a replacement student ID card?",
+      "alternate_questions": [
+        "I lost my ID card, what should I do?",
+        "How can I request a duplicate ID card?",
+        "What is the fee for a new ID card?"
+      ],
+      "keywords": ["ID card replacement", "lost ID card", "duplicate ID"],
+      "answer": "Sample Data: In case of a lost or damaged ID card, students should first file a report with campus security and then submit a duplicate ID card request through the Student Affairs Office, along with the applicable replacement fee. The new ID card is typically issued within 5-7 working days.",
+      "department": "Student Affairs Office",
+      "related_topics": ["Library Membership", "Hostel Application"],
+      "priority": 3,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 48,
+      "category": "Policies",
+      "intent": "no_dues_certificate",
+      "question": "How do I obtain a No Dues Certificate?",
+      "alternate_questions": [
+        "What is required to get clearance from the university?",
+        "How do I clear all my dues before graduating?",
+        "Where do I get the no dues form signed?"
+      ],
+      "keywords": ["no dues certificate", "clearance", "graduation clearance"],
+      "answer": "Sample Data: A No Dues Certificate confirms that a student has cleared all fee, library, hostel, and department dues. Students must fill out a no-dues form and obtain signatures from respective departments (Accounts, Library, Hostel, and Academic Department) before it can be submitted to the Registrar's Office for final clearance, typically required before receiving the final degree or transcripts.",
+      "department": "Registrar Office",
+      "related_topics": ["Library Fine", "Hostel Fees", "Convocation"],
+      "priority": 2,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 49,
+      "category": "General",
+      "intent": "student_portal_login",
+      "question": "How do I log in to the student portal?",
+      "alternate_questions": [
+        "What is my student portal username?",
+        "I forgot my portal password, how do I reset it?",
+        "Where do I access the student dashboard?"
+      ],
+      "keywords": ["student portal", "login", "password reset"],
+      "answer": "Sample Data: Students can log in to the student portal using the enrollment number as the username and the password set during registration. If the password is forgotten, it can be reset using the 'Forgot Password' link, which sends a reset code to the registered email or mobile number.",
+      "department": "IT Services",
+      "related_topics": ["IT Helpdesk", "Course Registration"],
+      "priority": 1,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 50,
+      "category": "General",
+      "intent": "wifi_access",
+      "question": "How do I connect to campus Wi-Fi?",
+      "alternate_questions": [
+        "What is the Wi-Fi password on campus?",
+        "How do I get internet access in the hostel?",
+        "Why is campus Wi-Fi not connecting?"
+      ],
+      "keywords": ["Wi-Fi", "internet access", "campus network"],
+      "answer": "Sample Data: Campus Wi-Fi access is provided to all enrolled students using their student portal credentials for authentication. If connection issues persist, students should verify their device network settings or contact the IT Helpdesk located at the Computer Center for troubleshooting assistance.",
+      "department": "IT Services",
+      "related_topics": ["IT Helpdesk", "Student Portal"],
+      "priority": 3,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 51,
+      "category": "Academics",
+      "intent": "internal_assessment",
+      "question": "How is internal assessment calculated?",
+      "alternate_questions": [
+        "What is included in internal marks?",
+        "How much weightage do internals carry?",
+        "How are sessional marks awarded?"
+      ],
+      "keywords": ["internal assessment", "sessional marks", "internal marks weightage"],
+      "answer": "Sample Data: Internal assessment typically comprises class tests, assignments, quizzes, attendance, and classroom participation, together accounting for around 25-30% of the total marks in a subject, while the remaining weightage comes from the end-semester examination. Exact weightage may vary by department and subject type (theory vs. practical).",
+      "department": "Academic Office",
+      "related_topics": ["Grading System", "Attendance Requirement"],
+      "priority": 2,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 52,
+      "category": "Academics",
+      "intent": "project_submission",
+      "question": "What is the process for final year project submission?",
+      "alternate_questions": [
+        "How do I submit my major project?",
+        "What is the deadline for project report submission?",
+        "Do I need a project guide's approval before submission?"
+      ],
+      "keywords": ["project submission", "final year project", "project report"],
+      "answer": "Sample Data: Final year project submission requires students to complete their project under an assigned guide, prepare a formatted report following university guidelines, and submit both a hard copy and digital copy before the deadline specified in the academic calendar. Approval from the project guide and department coordinator is mandatory before submission is accepted.",
+      "department": "Academic Office",
+      "related_topics": ["Curriculum", "Academic Calendar"],
+      "priority": 2,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 53,
+      "category": "Academics",
+      "intent": "internship_credit",
+      "question": "Can I get academic credit for an internship?",
+      "alternate_questions": [
+        "Does the university recognize internships for credit?",
+        "How do I get my internship approved?",
+        "What documents are needed for internship credit?"
+      ],
+      "keywords": ["internship credit", "industrial training", "internship approval"],
+      "answer": "Sample Data: Students can earn academic credit for internships completed with approved organizations, provided the internship is pre-approved by the department coordinator and meets the minimum duration requirement (commonly 4-6 weeks). Students must submit an internship report, certificate, and supervisor evaluation to receive credit.",
+      "department": "Academic Office",
+      "related_topics": ["Curriculum", "Placement Cell"],
+      "priority": 3,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 54,
+      "category": "Academics",
+      "intent": "transcript_request",
+      "question": "How do I get an official academic transcript?",
+      "alternate_questions": [
+        "How can I request my transcript for higher studies?",
+        "What is the process to get a consolidated marksheet?",
+        "How long does it take to get a transcript?"
+      ],
+      "keywords": ["transcript", "consolidated marksheet", "academic records"],
+      "answer": "Sample Data: Official transcripts can be requested through the Registrar's Office by submitting an online request along with the applicable fee. Processing typically takes 7-10 working days, and transcripts may be issued as physical copies, digitally verified PDFs, or sent directly to foreign universities upon request for higher studies applications.",
+      "department": "Registrar Office",
+      "related_topics": ["No Dues Certificate", "Grading System"],
+      "priority": 2,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 55,
+      "category": "Placements",
+      "intent": "placement_eligibility",
+      "question": "What is the eligibility criteria for campus placements?",
+      "alternate_questions": [
+        "Who can sit for placement drives?",
+        "Do I need a minimum CGPA for placements?",
+        "Is there a backlog restriction for placement eligibility?"
+      ],
+      "keywords": ["placement eligibility", "campus recruitment", "CGPA requirement"],
+      "answer": "Sample Data: Placement eligibility generally requires students to maintain a minimum CGPA (commonly 6.0 to 6.5 on a 10-point scale) with no active backlogs at the time of the placement drive. Specific companies may set additional criteria such as branch restrictions or minimum percentage in 10th/12th, which are communicated by the Placement Cell before each drive.",
+      "department": "Placement Cell",
+      "related_topics": ["Placement Registration", "Grading System"],
+      "priority": 1,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 56,
+      "category": "Placements",
+      "intent": "placement_registration",
+      "question": "How do I register for campus placements?",
+      "alternate_questions": [
+        "Where do I sign up for placement drives?",
+        "How do I update my resume on the placement portal?",
+        "How do I get notified about upcoming companies?"
+      ],
+      "keywords": ["placement registration", "placement portal", "resume upload"],
+      "answer": "Sample Data: Students must register on the university's Placement Portal by uploading an updated resume, academic transcripts, and personal details. Once registered, students receive notifications about upcoming company drives and can apply for specific opportunities based on their eligibility.",
+      "department": "Placement Cell",
+      "related_topics": ["Placement Eligibility", "Internship Credit"],
+      "priority": 1,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 57,
+      "category": "Placements",
+      "intent": "placement_training",
+      "question": "Does the university provide placement training?",
+      "alternate_questions": [
+        "Is there aptitude test preparation available?",
+        "Are mock interviews conducted before placements?",
+        "How can I improve my soft skills for interviews?"
+      ],
+      "keywords": ["placement training", "aptitude preparation", "mock interviews"],
+      "answer": "Sample Data: The Placement Cell conducts pre-placement training sessions covering aptitude tests, group discussions, mock interviews, and soft skills development, typically starting in the pre-final year. Students are encouraged to attend these sessions to improve their readiness for campus recruitment drives.",
+      "department": "Placement Cell",
+      "related_topics": ["Placement Registration", "Placement Eligibility"],
+      "priority": 3,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 58,
+      "category": "General",
+      "intent": "bonafide_certificate",
+      "question": "How do I get a bonafide certificate?",
+      "alternate_questions": [
+        "Where can I request a student status certificate?",
+        "How long does it take to issue a bonafide certificate?",
+        "Do I need a bonafide certificate for a bank loan?"
+      ],
+      "keywords": ["bonafide certificate", "student status certificate", "proof of enrollment"],
+      "answer": "Sample Data: A bonafide certificate, confirming active enrollment status, can be requested through the Student Affairs Office or the online student portal. It is commonly required for bank loans, passport applications, or visa processing, and is usually issued within 3-5 working days of the request.",
+      "department": "Student Affairs Office",
+      "related_topics": ["Transcript Request", "Office Directory"],
+      "priority": 2,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 59,
+      "category": "General",
+      "intent": "education_loan_documents",
+      "question": "What documents do I need for an education loan application?",
+      "alternate_questions": [
+        "How do I get fee estimate documents for a bank loan?",
+        "Can the university help with loan paperwork?",
+        "What certificate do banks ask for education loans?"
+      ],
+      "keywords": ["education loan", "bank loan documents", "fee estimate certificate"],
+      "answer": "Sample Data: For education loan applications, students typically need an admission letter, fee structure/estimate certificate, and bonafide certificate, all of which can be obtained from the Accounts Office and Student Affairs Office. Some banks may also request academic performance records for loan disbursement in subsequent years.",
+      "department": "Accounts Office",
+      "related_topics": ["Fee Structure", "Bonafide Certificate"],
+      "priority": 3,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 60,
+      "category": "General",
+      "intent": "medical_facility",
+      "question": "Is there a medical facility on campus?",
+      "alternate_questions": [
+        "Where is the campus health center?",
+        "What should I do in a medical emergency on campus?",
+        "Is there a doctor available in the hostel?"
+      ],
+      "keywords": ["medical facility", "health center", "campus doctor"],
+      "answer": "Sample Data: The university operates an on-campus health center staffed with a resident doctor and nursing staff for basic medical care and emergencies, generally available during working hours with on-call support for hostel residents after hours. Serious medical emergencies are referred to nearby partner hospitals for advanced treatment.",
+      "department": "Student Affairs Office",
+      "related_topics": ["Hostel Rules", "Grievance Redressal"],
+      "priority": 3,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 61,
+      "category": "General",
+      "intent": "sports_facilities",
+      "question": "What sports facilities are available on campus?",
+      "alternate_questions": [
+        "Is there a gym on campus?",
+        "How do I join the university cricket team?",
+        "What indoor games are available in the hostel?"
+      ],
+      "keywords": ["sports facilities", "gym", "campus recreation"],
+      "answer": "Sample Data: The campus offers sports facilities including a gymnasium, outdoor grounds for cricket, football, and athletics, plus indoor facilities for badminton, table tennis, and chess. Students interested in representing the university at inter-college tournaments can register with the Sports Department during the trials conducted each semester.",
+      "department": "Sports Department",
+      "related_topics": ["Student Clubs", "Hostel Rules"],
+      "priority": 3,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 62,
+      "category": "General",
+      "intent": "student_clubs",
+      "question": "How do I join a student club or society?",
+      "alternate_questions": [
+        "What clubs are available for students?",
+        "How do I start a new student club?",
+        "Is there a technical club for coding enthusiasts?"
+      ],
+      "keywords": ["student clubs", "societies", "extracurricular activities"],
+      "answer": "Sample Data: The university hosts various student-run clubs including technical, cultural, literary, and social service societies. Students can join by registering during the club recruitment drive typically held at the start of each academic year, and new clubs can be proposed by submitting a formal proposal to the Student Activities Committee.",
+      "department": "Student Affairs Office",
+      "related_topics": ["Sports Facilities", "Grievance Redressal"],
+      "priority": 3,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 63,
+      "category": "Exams",
+      "intent": "supplementary_exam",
+      "question": "What is a supplementary examination?",
+      "alternate_questions": [
+        "Is there a special exam for students who missed the main exam?",
+        "How do I apply for a supplementary exam?",
+        "When are supplementary exams conducted?"
+      ],
+      "keywords": ["supplementary exam", "special exam", "makeup exam"],
+      "answer": "Sample Data: A supplementary examination is conducted for students who were unable to appear for the regular end-semester exam due to valid reasons such as medical emergencies, with prior approval from the Dean of Academics. These are typically scheduled shortly after the regular exam results are declared, subject to submission of supporting documents.",
+      "department": "Examination Cell",
+      "related_topics": ["Exam Schedule", "Backlog Subjects"],
+      "priority": 3,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 64,
+      "category": "Exams",
+      "intent": "practical_exam",
+      "question": "How are practical/lab exams conducted?",
+      "alternate_questions": [
+        "What is the format of lab exams?",
+        "Who evaluates practical exams?",
+        "Do I need a lab record for practical exams?"
+      ],
+      "keywords": ["practical exam", "lab exam", "external examiner"],
+      "answer": "Sample Data: Practical/lab examinations are typically conducted by an internal faculty member along with an external examiner appointed by the university. Students must submit a completed and signed lab record/journal at the time of the exam, and evaluation is based on viva-voce, practical performance, and the lab record.",
+      "department": "Examination Cell",
+      "related_topics": ["Grading System", "Curriculum"],
+      "priority": 3,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 65,
+      "category": "Admissions",
+      "intent": "entrance_exam_info",
+      "question": "Which entrance exam is required for admission?",
+      "alternate_questions": [
+        "Do I need JEE or a state-level exam for admission?",
+        "What entrance exams does the university accept?",
+        "Is there a direct admission option without an entrance exam?"
+      ],
+      "keywords": ["entrance exam", "JEE", "state-level exam"],
+      "answer": "Sample Data: Admission to undergraduate engineering programs is typically based on a state-level entrance examination or JEE Main scores, depending on the program and category. Some management or self-financed seats may be available through direct admission, subject to eligibility criteria and seat availability. Postgraduate admissions often require GATE or an equivalent university entrance test scores.",
+      "department": "Admissions Office",
+      "related_topics": ["Eligibility Criteria", "Counselling Process"],
+      "priority": 1,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 66,
+      "category": "Admissions",
+      "intent": "management_quota",
+      "question": "Is there a management quota for admission?",
+      "alternate_questions": [
+        "Can I get direct admission through management quota?",
+        "What is the fee for management quota seats?",
+        "How many seats are reserved under management quota?"
+      ],
+      "keywords": ["management quota", "direct admission", "NRI quota"],
+      "answer": "Sample Data: A limited number of seats may be available under a management or NRI quota, subject to state regulatory approval and university policy. These seats typically carry a higher fee structure and are allotted based on merit within the quota category. Interested candidates should contact the Admissions Office directly for current quota availability and fee details.",
+      "department": "Admissions Office",
+      "related_topics": ["Fee Structure", "Eligibility Criteria"],
+      "priority": 3,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 67,
+      "category": "Fees",
+      "intent": "scholarship_fee_deduction",
+      "question": "Will my scholarship be adjusted against my fee automatically?",
+      "alternate_questions": [
+        "Do I still need to pay the full fee if I have a scholarship?",
+        "How is scholarship amount adjusted in fee payment?",
+        "Will I get a fee waiver upfront or reimbursed later?"
+      ],
+      "keywords": ["scholarship adjustment", "fee waiver", "reimbursement"],
+      "answer": "Sample Data: For most government scholarship schemes, the tuition fee portion is transferred directly to the university on the student's behalf, meaning students may need to pay only the remaining charges upfront (such as development or examination fees). Some scholarships instead reimburse the student directly, so students should confirm the disbursement mode with the Scholarship Cell to plan their fee payments accordingly.",
+      "department": "Accounts Office",
+      "related_topics": ["Scholarship Disbursement", "Fee Payment"],
+      "priority": 2,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 68,
+      "category": "Fees",
+      "intent": "caution_deposit",
+      "question": "What is the caution money deposit and is it refundable?",
+      "alternate_questions": [
+        "Do I get my security deposit back after graduation?",
+        "What is caution deposit used for?",
+        "How do I claim my refundable deposit?"
+      ],
+      "keywords": ["caution money", "security deposit", "refundable deposit"],
+      "answer": "Sample Data: A caution money deposit is collected at the time of admission to cover any damages to university property or unpaid dues during the course of study. This deposit is refundable after graduation, provided there are no outstanding dues, and can be claimed by submitting a refund request along with the No Dues Certificate to the Accounts Office.",
+      "department": "Accounts Office",
+      "related_topics": ["No Dues Certificate", "Fee Refund"],
+      "priority": 3,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 69,
+      "category": "Scholarships",
+      "intent": "merit_scholarship",
+      "question": "Does the university offer merit scholarships for top scorers?",
+      "alternate_questions": [
+        "Is there a scholarship for toppers?",
+        "How is merit scholarship amount decided?",
+        "Do I need to apply separately for merit scholarship?"
+      ],
+      "keywords": ["merit scholarship", "topper scholarship", "academic excellence award"],
+      "answer": "Sample Data: The university offers merit-based scholarships to top-performing students in each branch and semester, typically covering a percentage of tuition fees. These are usually awarded automatically based on semester results without requiring a separate application, though students should confirm eligibility criteria with the Scholarship Cell each semester.",
+      "department": "Scholarship Cell",
+      "related_topics": ["Scholarship Eligibility", "Grading System"],
+      "priority": 2,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 70,
+      "category": "Scholarships",
+      "intent": "sports_scholarship",
+      "question": "Is there a scholarship for sports achievements?",
+      "alternate_questions": [
+        "Do athletes get fee concessions?",
+        "How do I apply for a sports quota scholarship?",
+        "What proof do I need for a sports scholarship?"
+      ],
+      "keywords": ["sports scholarship", "athlete fee concession", "sports quota"],
+      "answer": "Sample Data: Students with notable achievements in sports at the state, national, or international level may be eligible for a sports scholarship or fee concession. Applicants must submit proof of achievement, such as certificates from recognized sports authorities, to the Sports Department, which forwards verified applications to the Scholarship Cell for approval.",
+      "department": "Scholarship Cell",
+      "related_topics": ["Sports Facilities", "Scholarship Eligibility"],
+      "priority": 3,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 71,
+      "category": "Academics",
+      "intent": "credit_transfer",
+      "question": "Can I transfer credits from another university?",
+      "alternate_questions": [
+        "Does the university accept transfer credits?",
+        "How do I get credit exemption for subjects already completed?",
+        "What is the process for credit transfer approval?"
+      ],
+      "keywords": ["credit transfer", "credit exemption", "prior learning"],
+      "answer": "Sample Data: Credit transfer from another recognized university may be considered for students transferring programs or returning from an exchange program, subject to syllabus equivalence review by the concerned department. Students must submit official transcripts and detailed syllabi for evaluation, and approval rests with the Academic Committee.",
+      "department": "Academic Office",
+      "related_topics": ["Branch Change", "Curriculum"],
+      "priority": 3,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 72,
+      "category": "Academics",
+      "intent": "exchange_program",
+      "question": "Does the university offer student exchange programs?",
+      "alternate_questions": [
+        "Can I study abroad for a semester?",
+        "How do I apply for an international exchange program?",
+        "Are exchange program credits transferable?"
+      ],
+      "keywords": ["exchange program", "study abroad", "international collaboration"],
+      "answer": "Sample Data: The university may offer student exchange opportunities with partner institutions abroad, subject to available MoUs (Memorandums of Understanding) and student eligibility, typically requiring a minimum CGPA. Interested students should contact the International Relations Cell for current partner universities and application deadlines.",
+      "department": "International Relations Cell",
+      "related_topics": ["Credit Transfer", "Curriculum"],
+      "priority": 3,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 73,
+      "category": "Hostel",
+      "intent": "hostel_mess_menu",
+      "question": "Can I see the hostel mess menu?",
+      "alternate_questions": [
+        "What food is served in the hostel mess?",
+        "Is there a separate menu for vegetarian students?",
+        "How often does the mess menu change?"
+      ],
+      "keywords": ["mess menu", "hostel food", "vegetarian options"],
+      "answer": "Sample Data: The hostel mess menu, including separate options for vegetarian and non-vegetarian meals, is displayed on the mess notice board and typically rotates on a weekly basis. Students can raise food quality concerns or suggestions through the Mess Committee, which includes student representatives from each hostel block.",
+      "department": "Hostel Office",
+      "related_topics": ["Hostel Rules", "Hostel Fees"],
+      "priority": 3,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 74,
+      "category": "Hostel",
+      "intent": "hostel_room_change",
+      "question": "Can I request a hostel room change?",
+      "alternate_questions": [
+        "How do I switch roommates?",
+        "Can I change my hostel block?",
+        "What is the process to request a different room?"
+      ],
+      "keywords": ["room change", "roommate switch", "hostel block transfer"],
+      "answer": "Sample Data: Room change requests can be submitted to the hostel warden with valid reasons, such as conflicts with roommates or medical requirements. Requests are considered subject to room availability and are typically processed at the start of a new semester, though urgent cases may be reviewed earlier.",
+      "department": "Hostel Office",
+      "related_topics": ["Hostel Application", "Hostel Rules"],
+      "priority": 3,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 75,
+      "category": "Library",
+      "intent": "library_timings",
+      "question": "What are the library working hours?",
+      "alternate_questions": [
+        "Is the library open on weekends?",
+        "What time does the library close?",
+        "Is there a 24-hour reading room?"
+      ],
+      "keywords": ["library timings", "working hours", "reading room"],
+      "answer": "Sample Data: The central library is typically open from 8:00 AM to 8:00 PM on weekdays and with reduced hours on weekends. During examination periods, an extended-hours reading room may be made available, sometimes operating 24 hours, to support student preparation. Exact timings are posted on the library notice board and website.",
+      "department": "Library",
+      "related_topics": ["Library Membership", "Digital Resources"],
+      "priority": 3,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 76,
+      "category": "Contacts",
+      "intent": "registrar_office_contact",
+      "question": "How do I contact the Registrar's Office?",
+      "alternate_questions": [
+        "What is the Registrar's office email?",
+        "Where is the Registrar's office located?",
+        "Who handles official certificate requests?"
+      ],
+      "keywords": ["registrar contact", "official certificates", "registrar office location"],
+      "answer": "Sample Data: The Registrar's Office can be contacted at registrar@sampleuniversity.edu (Sample Data) for matters related to transcripts, certificates, and official records. The office is located in the Administrative Block, Room 110, and is open on working days from 9:00 AM to 5:00 PM.",
+      "department": "Registrar Office",
+      "related_topics": ["Transcript Request", "No Dues Certificate"],
+      "priority": 2,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 77,
+      "category": "Contacts",
+      "intent": "placement_cell_contact",
+      "question": "How do I contact the Placement Cell?",
+      "alternate_questions": [
+        "What is the placement office email address?",
+        "Where is the placement cell located on campus?",
+        "Who do I talk to about internship opportunities?"
+      ],
+      "keywords": ["placement cell contact", "placement office", "internship opportunities"],
+      "answer": "Sample Data: The Placement Cell can be reached at placements@sampleuniversity.edu (Sample Data) or via the placement portal's query section. The office is located in the Training and Placement Block and is open on working days from 9:30 AM to 5:30 PM.",
+      "department": "Placement Cell",
+      "related_topics": ["Placement Registration", "Office Directory"],
+      "priority": 2,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 78,
+      "category": "Policies",
+      "intent": "ragging_helpline",
+      "question": "Is there a 24-hour anti-ragging helpline?",
+      "alternate_questions": [
+        "What number do I call to report ragging urgently?",
+        "Is the anti-ragging helpline confidential?",
+        "Can I report ragging anonymously?"
+      ],
+      "keywords": ["anti-ragging helpline", "confidential reporting", "emergency helpline"],
+      "answer": "Sample Data: The university operates a confidential anti-ragging helpline that is monitored around the clock, allowing students to report incidents anonymously. Reports can also be escalated to the national anti-ragging helpline as per regulatory requirements, and all complaints are handled with strict confidentiality to protect the complainant's identity.",
+      "department": "Student Affairs Office",
+      "related_topics": ["Anti-Ragging Policy", "Grievance Redressal"],
+      "priority": 1,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 79,
+      "category": "Policies",
+      "intent": "dress_code",
+      "question": "Is there a dress code for students on campus?",
+      "alternate_questions": [
+        "What is the uniform policy?",
+        "Do engineering students need to wear formal attire?",
+        "Are there dress code rules for the library or labs?"
+      ],
+      "keywords": ["dress code", "uniform policy", "attire rules"],
+      "answer": "Sample Data: While a strict uniform may not be mandatory for all programs, students are generally expected to maintain decent and modest attire on campus. Specific areas such as laboratories may require closed footwear and lab coats for safety reasons, and formal attire is typically required during placement drives and official university events.",
+      "department": "Student Affairs Office",
+      "related_topics": ["Code of Conduct", "Hostel Rules"],
+      "priority": 3,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 80,
+      "category": "Policies",
+      "intent": "vehicle_parking",
+      "question": "Can I bring my own vehicle to campus?",
+      "alternate_questions": [
+        "Is there a parking facility for students?",
+        "Do I need a vehicle pass to park on campus?",
+        "Are two-wheelers allowed for first-year students?"
+      ],
+      "keywords": ["vehicle parking", "parking pass", "two-wheeler policy"],
+      "answer": "Sample Data: Students may bring personal vehicles to campus, subject to registration with campus security and issuance of a valid parking pass/sticker. Some universities restrict two-wheelers or four-wheelers for first-year hostel residents as part of campus safety policy, so students should check current rules with the Student Affairs Office before bringing a vehicle.",
+      "department": "Student Affairs Office",
+      "related_topics": ["Hostel Rules", "Code of Conduct"],
+      "priority": 3,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 81,
+      "category": "General",
+      "intent": "email_id_activation",
+      "question": "How do I activate my official university email ID?",
+      "alternate_questions": [
+        "When do I get my university email address?",
+        "Why is my student email not working?",
+        "Do I need to use my university email for official communication?"
+      ],
+      "keywords": ["university email", "email activation", "official communication"],
+      "answer": "Sample Data: Official university email IDs are generated and activated within a few days of admission confirmation, following the format enrollmentnumber@sampleuniversity.edu (Sample Data). This email is the primary channel for official communication, including exam notices and academic circulars, so students should check it regularly and report activation issues to the IT Helpdesk.",
+      "department": "IT Services",
+      "related_topics": ["Student Portal Login", "IT Helpdesk"],
+      "priority": 2,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 82,
+      "category": "General",
+      "intent": "transport_facility",
+      "question": "Does the university provide bus transport for day scholars?",
+      "alternate_questions": [
+        "Is there a college bus service?",
+        "How do I apply for a bus pass?",
+        "What routes does the university bus cover?"
+      ],
+      "keywords": ["transport facility", "bus service", "bus pass"],
+      "answer": "Sample Data: The university operates a bus transport service for day-scholar students covering major routes within the city, on a subscription basis. Students can apply for a bus pass through the Transport Office at the start of the academic year, specifying their preferred boarding point and route.",
+      "department": "Transport Office",
+      "related_topics": ["Fee Payment", "Hostel Application"],
+      "priority": 3,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 83,
+      "category": "Exams",
+      "intent": "exam_center_change",
+      "question": "Can I request a change in my examination center?",
+      "alternate_questions": [
+        "How do I switch to a different exam venue?",
+        "Is exam center change allowed for medical reasons?",
+        "What is the process for requesting a different exam room?"
+      ],
+      "keywords": ["exam center change", "exam venue", "special exam arrangement"],
+      "answer": "Sample Data: Examination center or seating changes are generally not permitted except in cases of documented medical conditions or disabilities requiring special arrangements. Such requests must be submitted to the Examination Cell well in advance of the exam date, along with supporting medical certification.",
+      "department": "Examination Cell",
+      "related_topics": ["Admit Card", "Exam Schedule"],
+      "priority": 3,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 84,
+      "category": "Exams",
+      "intent": "provisional_certificate",
+      "question": "How do I get a provisional degree certificate?",
+      "alternate_questions": [
+        "What is a provisional certificate used for?",
+        "How soon after results can I get a provisional certificate?",
+        "Do I need a provisional certificate for job applications?"
+      ],
+      "keywords": ["provisional certificate", "provisional degree", "temporary certificate"],
+      "answer": "Sample Data: A provisional certificate, confirming that a student has completed all degree requirements pending the formal convocation and final degree issuance, can be requested from the Examination Cell shortly after final semester results are declared. It is commonly used for job applications and higher education admissions while awaiting the official degree.",
+      "department": "Examination Cell",
+      "related_topics": ["Result Declaration", "Convocation"],
+      "priority": 2,
+      "last_updated": "2026-07-16"
+    },
+    {
+      "id": 85,
+      "category": "General",
+      "intent": "disability_support",
+      "question": "What support is available for students with disabilities?",
+      "alternate_questions": [
+        "Does the university provide accessibility accommodations?",
+        "Can I get extra time in exams for a disability?",
+        "Is there a dedicated cell for differently-abled students?"
+      ],
+      "keywords": ["disability support", "accessibility", "special accommodations"],
+      "answer": "Sample Data: The university maintains a Disability Support Cell to assist students with physical, visual, hearing, or learning disabilities, offering accommodations such as extra exam time, scribes, accessible hostel rooms, and campus accessibility support. Students should register with the cell and submit relevant medical documentation to avail these facilities.",
+      "department": "Student Affairs Office",
+      "related_topics": ["Exam Center Change", "Grievance Redressal"],
+      "priority": 2,
+      "last_updated": "2026-07-16"
+    }
+  ]
+}

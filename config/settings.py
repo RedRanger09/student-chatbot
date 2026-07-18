@@ -95,12 +95,22 @@ def _resolve_cors_origins() -> list[str]:
     """
     Comma-separated ``CORS_ORIGINS``.
 
+    Origins are normalized (strip quotes / trailing slashes) because browsers
+    send ``Origin`` without a trailing slash and hosts often paste URLs with one.
     When unset, allow common local Next.js origins for development only.
     Deployments should set explicit Vercel / production origins.
     """
     raw = _env("CORS_ORIGINS")
     if raw:
-        return [part.strip() for part in raw.split(",") if part.strip()]
+        origins: list[str] = []
+        for part in raw.split(","):
+            origin = part.strip().strip("\"'").rstrip("/")
+            if origin:
+                origins.append(origin)
+        return origins or [
+            "http://localhost:3000",
+            "http://127.0.0.1:3000",
+        ]
     return [
         "http://localhost:3000",
         "http://127.0.0.1:3000",

@@ -19,7 +19,7 @@ from src.utils.logger import get_logger
 
 logger = get_logger(__name__)
 
-APP_VERSION = "0.9.0"
+APP_VERSION = "0.11.1"
 
 
 @dataclass

@@ -96,13 +96,16 @@ async function parseError(response: Response): Promise<string> {
 }
 
 async function request<T>(path: string, init?: RequestInit): Promise<T> {
-  const url = `${getBaseUrl()}${path}`;
+  const base = getBaseUrl();
+  const url = `${base}${path}`;
   let response: Response;
   try {
     response = await fetch(url, init);
   } catch {
     throw new ApiError(
-      "Assistant is temporarily unavailable. Please ensure the backend is running.",
+      `Cannot reach the API at ${base}. ` +
+        "Start the backend, or set NEXT_PUBLIC_API_BASE_URL to your Railway URL " +
+        "(then restart / redeploy the frontend).",
       0,
     );
   }
@@ -228,9 +231,18 @@ export async function streamChatMessage(
     });
   } catch {
     // Network failure — try classic endpoint.
-    const fallback = await sendChatMessage(input);
-    handlers.onDone?.(fallback);
-    return fallback;
+    try {
+      const fallback = await sendChatMessage(input);
+      handlers.onDone?.(fallback);
+      return fallback;
+    } catch {
+      throw new ApiError(
+        `Cannot reach the API at ${getBaseUrl()}. ` +
+          "Start the backend, or set NEXT_PUBLIC_API_BASE_URL to your Railway URL " +
+          "(then restart / redeploy the frontend).",
+        0,
+      );
+    }
   }
 
   if (!response.ok || !response.body) {

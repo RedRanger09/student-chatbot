@@ -2,6 +2,7 @@
  * Central API client for the Student Support FastAPI backend.
  */
 
+import { getClientId } from "@/lib/client-id";
 import { getGeminiApiKey } from "@/lib/gemini-key";
 
 export type ChatMessage = {
@@ -98,9 +99,14 @@ async function parseError(response: Response): Promise<string> {
 async function request<T>(path: string, init?: RequestInit): Promise<T> {
   const base = getBaseUrl();
   const url = `${base}${path}`;
+  const headers = new Headers(init?.headers);
+  const clientId = getClientId();
+  if (clientId) {
+    headers.set("X-Client-Id", clientId);
+  }
   let response: Response;
   try {
-    response = await fetch(url, init);
+    response = await fetch(url, { ...init, headers });
   } catch {
     throw new ApiError(
       `Cannot reach the API at ${base}. ` +
@@ -220,12 +226,17 @@ export async function streamChatMessage(
   const url = `${getBaseUrl()}/chat/stream`;
   let response: Response;
   try {
+    const headers: Record<string, string> = {
+      "Content-Type": "application/json",
+      Accept: "text/event-stream",
+    };
+    const clientId = getClientId();
+    if (clientId) {
+      headers["X-Client-Id"] = clientId;
+    }
     response = await fetch(url, {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "text/event-stream",
-      },
+      headers,
       body: JSON.stringify(chatRequestBody(input)),
       signal: input.signal,
     });

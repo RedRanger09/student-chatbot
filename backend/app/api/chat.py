@@ -9,12 +9,13 @@ from __future__ import annotations
 import json
 from collections.abc import Iterator
 
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter, Depends, HTTPException
 from fastapi.responses import StreamingResponse
 
 from backend.app.models.chat_models import ChatTurnRequest
 from backend.app.models.schemas import ChatMessageModel, ChatRequest, ChatResponse
 from backend.app.services.chat_service import ChatServiceError, get_chat_service
+from backend.app.services.client_identity import optional_client_id
 from backend.app.services.llm.provider_context import bind_gemini_api_key
 from src.utils.logger import get_logger
 
@@ -32,17 +33,21 @@ def _extract_api_key(value: object) -> str | None:
     return cleaned or None
 
 
-def _to_turn_request(body: ChatRequest) -> ChatTurnRequest:
+def _to_turn_request(body: ChatRequest, client_id: str) -> ChatTurnRequest:
     return ChatTurnRequest(
         message=body.message,
         conversation_id=body.conversation_id,
         session_id=body.session_id,
         api_key=_extract_api_key(body.api_key),
+        client_id=client_id or None,
     )
 
 
 @router.post("/chat", response_model=ChatResponse)
-def chat(body: ChatRequest) -> ChatResponse:
+def chat(
+    body: ChatRequest,
+    client_id: str = Depends(optional_client_id),
+) -> ChatResponse:
     """
     Accept a user message and return an assistant reply.
 
@@ -52,7 +57,7 @@ def chat(body: ChatRequest) -> ChatResponse:
     from backend.app.services.llm.provider_context import get_request_gemini_api_key
 
     service = get_chat_service()
-    turn = _to_turn_request(body)
+    turn = _to_turn_request(body, client_id)
     previous = get_request_gemini_api_key()
     try:
         bind_gemini_api_key(turn.api_key)
@@ -80,7 +85,10 @@ def chat(body: ChatRequest) -> ChatResponse:
 
 
 @router.post("/chat/stream")
-def chat_stream(body: ChatRequest) -> StreamingResponse:
+def chat_stream(
+    body: ChatRequest,
+    client_id: str = Depends(optional_client_id),
+) -> StreamingResponse:
     """
     Server-Sent Events stream for progressive assistant replies.
 
@@ -91,7 +99,7 @@ def chat_stream(body: ChatRequest) -> StreamingResponse:
       {"event":"error","detail":"...","status_code":400}
     """
     service = get_chat_service()
-    turn = _to_turn_request(body)
+    turn = _to_turn_request(body, client_id)
 
     def event_generator() -> Iterator[str]:
         # Bind per-iteration (StreamingResponse may hop contexts between yields).

@@ -127,7 +127,10 @@ class ChatService:
         )
 
         try:
-            conversation_id = self._ensure_conversation(request.conversation_id)
+            conversation_id = self._ensure_conversation(
+                request.conversation_id,
+                owner_id=request.client_id or "",
+            )
             user_message = self.create_message(conversation_id, "user", text)
             history = self._load_history(conversation_id, exclude={user_message.id})
             resolved = resolve_followup_context(text, history)
@@ -258,7 +261,10 @@ class ChatService:
             raise EmptyMessageError()
 
         try:
-            conversation_id = self._ensure_conversation(request.conversation_id)
+            conversation_id = self._ensure_conversation(
+                request.conversation_id,
+                owner_id=request.client_id or "",
+            )
             user_message = self.create_message(conversation_id, "user", text)
             history = self._load_history(conversation_id, exclude={user_message.id})
             resolved = resolve_followup_context(text, history)
@@ -438,8 +444,8 @@ class ChatService:
             latency_ms=round(latency_ms, 2),
         )
 
-    def store_conversation(self, title: str = "New chat") -> str:
-        conversation = self._store.create(title=title)
+    def store_conversation(self, title: str = "New chat", *, owner_id: str = "") -> str:
+        conversation = self._store.create(title=title, owner_id=owner_id)
         return conversation.id
 
     # ------------------------------------------------------------------
@@ -1147,13 +1153,25 @@ class ChatService:
         self._kb_service = get_kb_service()
         return self._kb_service
 
-    def _ensure_conversation(self, conversation_id: str | None) -> str:
+    def _ensure_conversation(
+        self,
+        conversation_id: str | None,
+        *,
+        owner_id: str = "",
+    ) -> str:
+        owner = (owner_id or "").strip()
         if conversation_id:
             existing = self._store.get(conversation_id)
             if existing is None:
                 raise ConversationNotFoundError(conversation_id)
+            # Reject cross-device access to someone else's chat.
+            if owner and not self._store.is_owner(existing, owner):
+                raise ConversationNotFoundError(conversation_id)
+            # Legacy chats with no owner: claim for this client on first touch.
+            if owner and not existing.owner_id:
+                existing.owner_id = owner
             return conversation_id
-        return self.store_conversation()
+        return self.store_conversation(owner_id=owner)
 
     def _resolve_session_context(self, session_id: str | None) -> SessionContext:
         if not session_id:

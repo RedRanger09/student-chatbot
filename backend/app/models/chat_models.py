@@ -36,6 +36,8 @@ class ChatTurnRequest:
     session_id: str | None = None
     # Client-supplied Gemini key for this turn only. Never persisted.
     api_key: str | None = None
+    # Browser device id from ``X-Client-Id`` — scopes conversation ownership.
+    client_id: str | None = None
 
 
 @dataclass
